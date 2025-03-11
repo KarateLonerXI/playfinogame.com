@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fino - Learn Finance Through Gaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7d1;
+            text-align: center;
+        }
+        .hero {
+            background-color: #ffcc00;
+            color: black;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 70px;
+        }
+        .hero > div {
+            text-align: center;
+        }
+        .hero img.logo {
+            width: 120px;
+            margin-right: 20px;
+            margin-bottom: 0px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .container {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .feature {
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        .feature p {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .hero > div {
+                text-align: left;
+            }
+        }
+        
+        .game-section {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+
+        .game-content {
+            max-width: 600px;
+            padding-right: 20px;
+            text-align: center; /* Align text to the left */
+            font-size: 1.8em;
+
+        }
+
+        .game-section figure {
+            margin: 0; /* Remove default figure margins */
+        }
+
+        .game-content ul {
+            text-align: left;
+            font-size: 1em; /* Increase font size */
+            list-style-position: outside; /* Ensure bullets are outside the list */
+            padding-left: 20px; /* Add padding to align bullet point */
+        }
+
+
+        .game-content ul li {
+            margin-bottom: 30px;
+        }
+
+
+        @media (max-width: 600px) {
+            .game-content {
+                padding-right: 0;
+                margin-bottom: 20px;
+                margin-left: 0; /* Remove left margin on small screens */
+                text-align: center; /* Center text on small screens */
+            }
+            .game-content ul{
+                text-align: left;
+            }
+        }
+
+        .survey-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: fit-content;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+
+        .survey-section p {
+            margin: 0;
+        }
+
+        .survey-section a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .survey-section a:hover{
+            text-decoration: underline;
+        }
+
+        .features {
+            margin-bottom: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="Images/FinoLogo.png" alt="Fino Logo" class="logo">
+        <div>
+            <h1>Master Finance Through Gaming</h1>
+            <p>Game-first learning with real-world financial mechanics</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Play the future of financial literacy</h2>
+        <form action="https://formspree.io/f/myzeydee" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+    </div>
+    <div class="game-section">
+        <div class="game-content">
+            <h2>Conquer Finance!</h2>
+            <ul> 
+                <li>Play through supermario-like levels</li>
+                <li>Defeat enemies to earn coins</li>
+                <li>Master concepts like budgeting, investing, and inflation between levels to upgrade your gear!</li>
+            </ul>
+        </div>
+        <figure>
+            <img src="Images/Inflation.png" alt="Gameplay Scene" class="hero-image">
+            <figcaption style="margin-top: 15px"><strong>Fighting Inflation</strong> </figcaption>
+        </figure>
+    </div>
+    <div class="survey-section">
+        <p>Want to help more? <a href="https://forms.gle/VmYHjh6MJfRv1buG8">Take our survey!</a></p>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="Images/Gaming.png" alt="Gameplay">
+            <p>Immersive Gameplay</p>
+        </div>
+        <div class="feature">
+            <img src="Images/learn.png" alt="Microlearning">
+            <p>Quick & Effective Microlearning</p>
+        </div>
+        <div class="feature">
+            <img src="Images/Finance.png" alt="Real-World Finance">
+            <p>Real-World Financial Mechanics</p>
+        </div>
+    </div>
+</body>
+</html>
